@@ -20,12 +20,5 @@ def generate():
     random_number = generate_random_alphanumeric(number)
     return render_template('Results.html', number=random_number)
 
-@app.route('/')
-def home():
-    return app.send_static_file('index.html')
-
-
 if __name__ == '__main__':
     app.run(debug=True)
-
-
